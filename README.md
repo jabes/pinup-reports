@@ -1,7 +1,6 @@
-# Pinup Stats
+# Pinup Reports
 
 This is a simple user interface for admins to view stats on their images and tag conversions.
-
 ### Requirements
 
 The following programs must be install on your machine before you may install.

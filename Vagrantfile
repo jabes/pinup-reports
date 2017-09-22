@@ -4,7 +4,7 @@
 Vagrant.configure("2") do |config|
 
     config.vm.box = "scotch/box"
-    config.vm.hostname = "pinup-stats.dev"
+    config.vm.hostname = "pinup-reports.dev"
 	config.vm.network "private_network", ip: "192.168.2.11"
 	config.vm.synced_folder ".", "/var/www/public", :mount_options => ["dmode=777", "fmode=666"]
 

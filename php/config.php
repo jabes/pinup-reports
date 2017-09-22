@@ -7,15 +7,15 @@ set_time_limit(10);
 DEFINE("EMMA_DEVMODE", false);
 DEFINE("LINE_BREAK", "--------------------------------------------------");
 
-session_name("PinupGraphSession"); // required for cross-subdomain
-session_set_cookie_params(0, '/', '.jbull.ca');
+session_name("PinupReportsSession"); // required for cross-subdomain
+session_set_cookie_params(0, '/', '.pinup-reports.dev');
 session_start();
 
-$BASEURL = "http://jbull.ca/work/graph"; // exclude trailing slash
+$BASEURL = "http://pinup-reports.dev"; // exclude trailing slash
 
-$db_info_slave["host"] = "127.0.0.1";
+$db_info_slave["host"] = "pinup.dev";
 $db_info_slave["username"] = "root";
-$db_info_slave["password"] = "xgnivCLnI6PUiy42";
+$db_info_slave["password"] = "root";
 $db_info_slave["dbname"] = "pinup";
 
 $slave = mysql_connect(

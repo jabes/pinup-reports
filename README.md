@@ -11,15 +11,13 @@ The following programs must be install on your machine before you may install.
 
 ### Install
 
-Before we get started, you should first provision the [Pinup](https://github.com/jabes/pinup) environment,
-since this library uses the database hosted on that machine.
-
 ```bash
 vagrant plugin install vagrant-hostsupdater
 vagrant up
 ```
 
-The server will now be available on the [pinup-reports.dev](http://pinup-reports.dev/) domain.
+- The server will now be available on the [pinup-reports.dev](http://pinup-reports.dev/) domain.
+- phpMyAdmin will be available at [pinup-reports.dev/phpmyadmin](http://pinup-reports.dev/phpmyadmin).
 
 ### Screenshots
 

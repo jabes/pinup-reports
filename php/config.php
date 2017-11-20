@@ -8,7 +8,6 @@ DEFINE("EMMA_DEVMODE", false);
 DEFINE("LINE_BREAK", "--------------------------------------------------");
 
 $host = $_SERVER['HTTP_HOST'];
-$is_production = ($host == 'reports.jbull.ca');
 
 session_name("PinupReportsSession"); // required for cross-subdomain
 session_set_cookie_params(0, '/', ".{$host}");
@@ -16,7 +15,7 @@ session_start();
 
 $BASEURL = "http://${host}"; // exclude trailing slash
 
-$db_info_slave["host"] = $is_production ? "127.0.0.1" : "pinup.dev"; // database lives in on separate host for dev
+$db_info_slave["host"] = "127.0.0.1";
 $db_info_slave["username"] = "root";
 $db_info_slave["password"] = "root";
 $db_info_slave["dbname"] = "pinup";

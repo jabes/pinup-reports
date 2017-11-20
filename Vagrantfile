@@ -3,10 +3,10 @@
 
 Vagrant.configure("2") do |config|
 
-    config.vm.box = "scotch/box"
+    config.vm.box = "ubuntu/trusty64"
     config.vm.hostname = "pinup-reports.dev"
-	config.vm.network "private_network", ip: "192.168.2.11"
-	config.vm.synced_folder ".", "/var/www/public", :mount_options => ["dmode=777", "fmode=666"]
+	config.vm.network "private_network", ip: "192.168.2.10"
+	config.vm.synced_folder ".", "/var/www/html", :mount_options => ["dmode=777", "fmode=666"]
 
 	config.vm.provision "shell", path: "provision.sh", privileged: false
 

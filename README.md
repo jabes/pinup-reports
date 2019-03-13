@@ -1,6 +1,10 @@
-# Pinup Reports
+![Pinup.js Reports](images/banner.png)
+
+--- 
 
 This is a simple user interface for admins to view stats on their images and tag conversions.
+
+---
 
 ### Requirements
 
